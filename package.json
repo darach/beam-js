@@ -1,0 +1,24 @@
+{
+  "name": "beam",
+  "version": "0.1.0",
+  "description": "Streams and Pipes revisited for analytics",
+  "main": "./lib/beam.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darach/beam-js.git"
+  },
+  "keywords": [
+    "cep", "streams", "pipes", "branch", "combine", "union", "flow"
+  ],
+  "author": "Darach Ennis",
+  "license": "MIT",
+  "dependencies": {
+    "byline": "~2.0.3",
+    "nodeunit": "~0.7.4",
+  },
+  "devDependencies": {},
+}
