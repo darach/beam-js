@@ -1,6 +1,6 @@
 {
   "name": "beam",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Streams and Pipes revisited for analytics",
   "main": "./lib/beam.js",
   "directories": {
