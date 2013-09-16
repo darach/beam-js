@@ -28,7 +28,7 @@ for (var i in words) createMatcher(beam, i, words[i]);
 
 // IO (streams) are relatively expensive. Compute (beams) are relatively cheap.
 stream.on('data', function(line) {
-  beam.push(line); // Tap the stream to the beam
+  beam.push(line.toString()); // Tap the stream to the beam
 });
 
 console.log('Word\t\tN\n-----------------');

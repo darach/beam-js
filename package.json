@@ -1,6 +1,6 @@
 {
   "name": "beam",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Streams and Pipes revisited for analytics",
   "main": "./lib/beam.js",
   "directories": {
@@ -17,7 +17,7 @@
   "author": "Darach Ennis",
   "license": "MIT",
   "dependencies": {
-    "byline": "~2.0.3",
+    "byline": "~3.1.2",
     "nodeunit": "~0.7.4"
   },
   "devDependencies": {}
