@@ -1,10 +1,9 @@
 {
   "name": "beam",
-  "version": "0.1.3",
-  "description": "Streams and Pipes revisited for analytics",
+  "version": "0.1.4",
+  "description": "Streams and Pipes revised for analytics",
   "main": "./lib/beam.js",
   "directories": {
-    "doc": "docs",
     "test": "test"
   },
   "repository": {
@@ -12,13 +11,28 @@
     "url": "https://github.com/darach/beam-js.git"
   },
   "keywords": [
-    "cep", "streams", "pipes", "branch", "combine", "union", "flow"
+    "cep",
+    "streams",
+    "pipes",
+    "branch",
+    "combine",
+    "union",
+    "flow",
+    "meta",
+    "builtin functions"
   ],
-  "author": "Darach Ennis",
+  "author": {
+    "name": "Darach Ennis"
+  },
   "license": "MIT",
   "dependencies": {
-    "byline": "~3.1.2",
-    "nodeunit": "~0.7.4"
+    "byline": "~2.0.3",
+    "nodeunit": "~0.8.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {},
+  "readme": "# **beam.js**\n\n> Streams and pipes for analytic or computational events\n\n## Status\n\nExperimental.\n\n## Overview\n\nNode.js **streams** and pipes are a wonderful UNIX streams like abstraction oriented\nfor fast IO transformations.  This allows IO events to be composed and for\ntransformations to be modularised and reused easily.\n\nHowever, stream operations are defined in terms of chunks of data and buffers. This is\ngreat for IO. But not for data already resident in process and in memory. Beams are like\nstreams, in that they support pipes but are lightweight and work with in memory types\nwithout buffering, copying, parsing.\n",
+  "readmeFilename": "README.md",
+  "_id": "beam@0.1.0",
+  "_from": "beam"
 }

@@ -9,10 +9,10 @@ function debug(x,y) { console.log('debug(' + x + '): ' + y); };
 function log(x,y) {  console.log(x + ': ' + y); };
 
 // Just plug into a data event to debug/log/trace ... Sources, Sinks, Operators
-source.on('data', function(data) { debug('source', data); });
-even.on('data', function(data) { debug('even', data); });
-square.on('data', function(data) { debug('square', data); });
-sink.on('data', function(data) { log('sink', data); });
+source.on('data', function() { debug('source', JSON.stringify(arguments)); });
+even.on('data', function() { debug('even', JSON.stringify(arguments)); });
+square.on('data', function() { debug('square', JSON.stringify(arguments)); });
+sink.on('data', function() { log('sink', JSON.stringify(arguments)); });
 
 source.pipe(even).pipe(square).pipe(sink);
 
